@@ -17,3 +17,13 @@ C:\Daten\Visual Studio 2012\Projects\MouseEvents\obj\Debug\MouseEvents.Propertie
 C:\Daten\Visual Studio 2012\Projects\MouseEvents\obj\Debug\MouseEvents.csproj.GenerateResource.Cache
 C:\Daten\Visual Studio 2012\Projects\MouseEvents\obj\Debug\MouseEvents.csprojAssemblyReference.cache
 C:\Daten\Visual Studio 2012\Projects\MouseEvents\obj\Debug\MouseEvents.csproj.CoreCompileInputs.cache
+C:\Users\FreudenbergA\source\repos\alexfreu69\MouseEvents\MouseEvents\bin\Debug\MouseEvents.exe.config
+C:\Users\FreudenbergA\source\repos\alexfreu69\MouseEvents\MouseEvents\bin\Debug\MouseEvents.exe
+C:\Users\FreudenbergA\source\repos\alexfreu69\MouseEvents\MouseEvents\bin\Debug\MouseEvents.pdb
+C:\Users\FreudenbergA\source\repos\alexfreu69\MouseEvents\MouseEvents\obj\Debug\MouseEvents.csprojAssemblyReference.cache
+C:\Users\FreudenbergA\source\repos\alexfreu69\MouseEvents\MouseEvents\obj\Debug\MouseEvents.Form1.resources
+C:\Users\FreudenbergA\source\repos\alexfreu69\MouseEvents\MouseEvents\obj\Debug\MouseEvents.Properties.Resources.resources
+C:\Users\FreudenbergA\source\repos\alexfreu69\MouseEvents\MouseEvents\obj\Debug\MouseEvents.csproj.GenerateResource.cache
+C:\Users\FreudenbergA\source\repos\alexfreu69\MouseEvents\MouseEvents\obj\Debug\MouseEvents.csproj.CoreCompileInputs.cache
+C:\Users\FreudenbergA\source\repos\alexfreu69\MouseEvents\MouseEvents\obj\Debug\MouseEvents.exe
+C:\Users\FreudenbergA\source\repos\alexfreu69\MouseEvents\MouseEvents\obj\Debug\MouseEvents.pdb

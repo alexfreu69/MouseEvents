@@ -28,10 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblDblCount = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblMissCount = new System.Windows.Forms.Label();
+            this.picLED = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.picLED)).BeginInit();
             this.SuspendLayout();
             // 
             // listBox1
@@ -48,9 +54,9 @@
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(253, 526);
+            this.button1.Location = new System.Drawing.Point(230, 526);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(98, 23);
             this.button1.TabIndex = 1;
             this.button1.Text = "Clear";
             this.button1.UseVisualStyleBackColor = true;
@@ -59,7 +65,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(227, 12);
+            this.label1.Location = new System.Drawing.Point(227, 63);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 13);
             this.label1.TabIndex = 2;
@@ -67,18 +73,55 @@
             // 
             // lblDblCount
             // 
-            this.lblDblCount.Location = new System.Drawing.Point(230, 34);
+            this.lblDblCount.Location = new System.Drawing.Point(230, 85);
             this.lblDblCount.Name = "lblDblCount";
             this.lblDblCount.Size = new System.Drawing.Size(106, 23);
             this.lblDblCount.TabIndex = 3;
             this.lblDblCount.Text = "0";
             this.lblDblCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(230, 124);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(95, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Possible miss > 1 s";
+            // 
+            // lblMissCount
+            // 
+            this.lblMissCount.Location = new System.Drawing.Point(230, 154);
+            this.lblMissCount.Name = "lblMissCount";
+            this.lblMissCount.Size = new System.Drawing.Size(106, 23);
+            this.lblMissCount.TabIndex = 5;
+            this.lblMissCount.Text = "0";
+            this.lblMissCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // picLED
+            // 
+            this.picLED.Image = global::MouseEvents.Properties.Resources.led;
+            this.picLED.Location = new System.Drawing.Point(269, 20);
+            this.picLED.Name = "picLED";
+            this.picLED.Size = new System.Drawing.Size(24, 24);
+            this.picLED.TabIndex = 6;
+            this.picLED.TabStop = false;
+            this.picLED.Visible = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 250;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(340, 564);
+            this.Controls.Add(this.picLED);
+            this.Controls.Add(this.lblMissCount);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblDblCount);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -90,6 +133,7 @@
             this.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDoubleClick);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
+            ((System.ComponentModel.ISupportInitialize)(this.picLED)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,6 +145,10 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblDblCount;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblMissCount;
+        private System.Windows.Forms.PictureBox picLED;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

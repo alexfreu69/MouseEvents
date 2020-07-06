@@ -16,6 +16,7 @@ namespace MouseEvents
         HiResTimer timer;
         Int64 lastval = 0;
         int iDoubleCount = 0;
+        int iMissCount = 0;
         Int64 lastDelta = 0;
 
         public Form1()
@@ -66,6 +67,11 @@ namespace MouseEvents
         private void Form1_MouseClick(object sender, MouseEventArgs e)
         {
             listBox1.Items.Add("MOUSECLICK " + getButton(e.Button)+ " " + GetDelta());
+            if (lastDelta > 1000)
+            {
+                iMissCount++;
+                lblMissCount.Text = iMissCount.ToString();
+            }
             JumpDown();
         }
 
@@ -83,6 +89,7 @@ namespace MouseEvents
                 iDoubleCount++;
                 lblDblCount.Text = iDoubleCount.ToString();
             }
+
             JumpDown();
 
         }
@@ -117,6 +124,10 @@ namespace MouseEvents
             return delta.ToString()+ " ms";
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            picLED.Visible = !picLED.Visible;
+        }
     }
 
     public class HiResTimer
